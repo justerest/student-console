@@ -1,0 +1,24 @@
+{
+  "name": "student-console",
+  "version": "0.1.0",
+  "description": "template for js console program",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "node main.js -dev",
+    "test": "node main.js",
+    "build": "pkg main.js -t win -o ./dist/sqex"
+  },
+  "keywords": [
+    "console",
+    "template",
+    "pascal"
+  ],
+  "author": "justerest",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
