@@ -2,7 +2,6 @@
 
 ### Table of Contents
 
--   [writeMember](#writemember)
 -   [stdio](#stdio)
     -   [read](#read)
     -   [readln](#readln)
@@ -10,13 +9,6 @@
     -   [writeln](#writeln)
 -   [InputTypes](#inputtypes)
 -   [ReadParams](#readparams)
-
-## writeMember
-
-**Parameters**
-
--   `number` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
--   `isWithoutPlus` **`true`?** 
 
 ## stdio
 
