@@ -1,6 +1,6 @@
 {
   "name": "student-console",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "template for js console program",
   "main": "main.js",
   "directories": {
@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "node index.js -dev",
     "test": "node index.js",
-    "build": "pkg index.js -t win -o ./dist/sqex"
+    "build": "pkg index.js -t win -o ./dist/sqex",
+    "build-linux": "pkg index.js -o ./dist/sqex"
   },
   "keywords": [
     "console",
