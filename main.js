@@ -44,7 +44,8 @@ module.exports = async function main() {
 };
 
 /**
- * @arg {number} number
+ * @private
+ * @param {number} number
  * @param {true} [isWithoutPlus]
  */
 
