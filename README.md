@@ -8,7 +8,6 @@
     -   [readln](#readln)
     -   [write](#write)
     -   [writeln](#writeln)
--   [returnTypedData](#returntypeddata)
 -   [InputTypes](#inputtypes)
 -   [ReadParams](#readparams)
 
@@ -21,7 +20,11 @@
 
 ## stdio
 
+Интерфейс для ввода/вывода
+
 ### read
+
+Метод для ввода
 
 **Parameters**
 
@@ -29,11 +32,15 @@
 
 ### readln
 
+Метод для ввода с символом конца строки
+
 **Parameters**
 
 -   `params` **[ReadParams](#readparams)** 
 
 ### write
+
+Метод для вывода
 
 **Parameters**
 
@@ -41,16 +48,11 @@
 
 ### writeln
 
+Метод для вывода с символом конца строки
+
 **Parameters**
 
 -   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
-
-## returnTypedData
-
-**Parameters**
-
--   `type` **[InputTypes](#inputtypes)** 
--   `data` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
 
 ## InputTypes
 
