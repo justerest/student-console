@@ -46,10 +46,8 @@ module.exports = async function main() {
 /**
  * @private
  * @param {number} number
- * @param {true} [isWithoutPlus]
  */
-
-function writeMember(number, isWithoutPlus) {
+function writeMember(number, isWithoutPlus = false) {
   const mod = Math.abs(number);
 
   if (number >= 0 && !isWithoutPlus) stdio.write('+ ');
