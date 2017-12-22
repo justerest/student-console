@@ -7,9 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "node main.js -dev",
-    "test": "node main.js",
-    "build": "pkg main.js -t win -o ./dist/sqex"
+    "dev": "node index.js -dev",
+    "test": "node index.js",
+    "build": "pkg index.js -t win -o ./dist/sqex"
   },
   "keywords": [
     "console",

@@ -1,6 +1,6 @@
 require('./lib/stdio');
 
-async function main() {
+module.exports = async function main() {
   writeln('ax^2 + bx + c = 0');
 
   const a = await readln({
@@ -8,18 +8,20 @@ async function main() {
     type: 'number',
     default: 1,
   });
+
   const b = await readln({
     message: 'b = ',
     type: 'number',
     default: -4,
   });
+
   const c = await readln({
     message: 'c = ',
     type: 'number',
     default: 4,
   });
 
-  writeMember(a, 'first');
+  writeMember(a, 'without plus');
   write('x^2 ');
   writeMember(b);
   write('x ');
@@ -39,25 +41,12 @@ async function main() {
   if (D > 0) {
     writeln('x2 = ' + (-b - D) / (2 * a));
   }
-}
+};
 
-const HAPPY_END = '\nНажмите ' +
-  'Enter'.underline +
-  ' или ' +
-  'Ctrl + C'.underline +
-  ', чтобы завершить программу';
+function writeMember(number, isWithoutPlus) {
+  const mod = Math.abs(number);
 
-main().then(() => writeln(HAPPY_END.white));
-
-function writeMember(number, isFirst) {
-  const plus = isFirst ? '' : '+ ';
-  if (number === 1) {
-    write(plus);
-  } else if (number === 0) {
-    write(plus + number);
-  } else if (number > 0) {
-    write(plus + number);
-  } else if (number < 0) {
-    write('- ' + Math.abs(number));
-  }
+  if (number >= 0 && !isWithoutPlus) write('+ ');
+  else write('- ');
+  if (mod !== 1) write(mod.toString().bold);
 }
