@@ -3,23 +3,11 @@ import stdio from './lib/stdio';
 export async function main() {
   stdio.writeln('ax^2 + bx + c = 0');
 
-  const a = <number>await stdio.readln({
-    message: 'a = ',
-    type: 'int',
-    default: 1,
-  });
+  const a = await stdio.readlnInt('a = ', 1);
 
-  const b = <number>await stdio.readln({
-    message: 'b = ',
-    type: 'int',
-    default: -4,
-  });
+  const b = await stdio.readlnInt('b = ', -4);
 
-  const c = <number>await stdio.readln({
-    message: 'c = ',
-    type: 'int',
-    default: 4,
-  });
+  const c = await stdio.readlnInt('c = ', 4);
 
   writeMember(a, true);
   stdio.write('x^2 ');

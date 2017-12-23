@@ -1,6 +1,6 @@
 # student-console
 
-Обучающий шаблон для создания консольных программ
+Шаблон для создания консольных программ
 
 # lib
 
@@ -9,40 +9,40 @@
 ### Table of Contents
 
 -   [stdio](#stdio)
-    -   [read](#read)
     -   [readln](#readln)
+    -   [readlnInt](#readlnint)
     -   [write](#write)
     -   [writeln](#writeln)
 
 ## stdio
 
-Интерфейс для ввода/вывода
-
-### read
-
-Метод для ввода
-
-**Parameters**
-
--   `params` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
-    -   `params.type` **(`"int"` \| `"float"` \| `"string"`)** 
-    -   `params.message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
-    -   `params.default` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
+Интерфейс ввода/вывода
 
 ### readln
 
-Метод для ввода с символом конца строки
+Считывает строку, введённую пользователем. Возвращает строку.
 
 **Parameters**
 
--   `params` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
-    -   `params.type` **(`"int"` \| `"float"` \| `"string"`)** 
-    -   `params.message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
-    -   `params.default` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
+-   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** значение, которое будет присваиваться в dev-режиме
+
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+
+### readlnInt
+
+Считывает строку, введённую пользователем. Возвращает целое число.
+
+**Parameters**
+
+-   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** значение, которое будет присваиваться в dev-режиме
+
+Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
 
 ### write
 
-Метод для вывода
+Вывод строки на экран, следующий вывод начнётся с текущей строки
 
 **Parameters**
 
@@ -50,7 +50,7 @@
 
 ### writeln
 
-Метод для вывода с символом конца строки
+Вывод строки на экран, следующий вывод начнётся с новой строки
 
 **Parameters**
 
