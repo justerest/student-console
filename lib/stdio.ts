@@ -20,9 +20,9 @@ export default {
   /**
   * Метод для ввода
   * @param {Object} params
-  * @prop {'int' | 'float' | 'string'} type
-  * @prop {string} message
-  * @prop {string | number} default
+  * @param {'int' | 'float' | 'string'} params.type
+  * @param {string} params.message
+  * @param {string | number} params.default
   */
   async read(params: ReadParams) {
     const defaultValue = params.default;
@@ -50,9 +50,9 @@ export default {
   /**
   * Метод для ввода с символом конца строки
   * @param {Object} params
-  * @prop {'int' | 'float' | 'string'} type
-  * @prop {string} message
-  * @prop {string | number} default
+  * @param {'int' | 'float' | 'string'} params.type
+  * @param {string} params.message
+  * @param {string | number} params.default
   */
   async readln(params: ReadParams) {
     const result = await this.read(params);
