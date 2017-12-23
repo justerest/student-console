@@ -1,6 +1,6 @@
 {
   "name": "student-console",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "template for js console program",
   "main": "main.js",
   "directories": {
