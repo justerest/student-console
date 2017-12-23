@@ -1,6 +1,6 @@
 {
   "name": "student-console",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "template for js console program",
   "main": "main.js",
   "directories": {
@@ -10,8 +10,8 @@
     "ts": "tsc -p ./",
     "dev": "npm run ts && node index.js -dev",
     "test": "npm run ts && node index.js",
-    "build": "npm run ts && pkg index.js -t win -o ./dist/sqex",
-    "build-linux": "npm run ts && pkg index.js -o ./dist/sqex",
+    "build": "npm run ts && pkg index.js -t win -o ./dist/program",
+    "build-linux": "npm run ts && pkg index.js -o ./dist/program",
     "doc": "npm run ts && documentation readme -s lib index.js"
   },
   "keywords": [
