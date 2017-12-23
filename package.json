@@ -7,10 +7,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "node index.js -dev",
-    "test": "node index.js",
-    "build": "pkg index.js -t win -o ./dist/sqex",
-    "build-linux": "pkg index.js -o ./dist/sqex"
+    "ts": "tsc -p ./",
+    "dev": "npm run ts && node index.js -dev",
+    "test": "npm run ts && node index.js",
+    "build": "npm run ts && pkg index.js -t win -o ./dist/sqex",
+    "build-linux": "npm run ts && pkg index.js -o ./dist/sqex",
+    "doc": "npm run ts && documentation readme -s lib index.js"
   },
   "keywords": [
     "console",
@@ -20,6 +22,11 @@
   "author": "justerest",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.1.2"
+    "chalk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "documentation": "^5.3.5",
+    "typescript": "^2.6.2"
   }
 }
