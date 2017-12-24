@@ -4,9 +4,7 @@ export async function main() {
   stdio.writeln('ax^2 + bx + c = 0');
 
   const a = await stdio.readlnInt('a = ', 1);
-
   const b = await stdio.readlnInt('b = ', -4);
-
   const c = await stdio.readlnInt('c = ', 4);
 
   writeMember(a, true);
