@@ -27,20 +27,27 @@ npm run build     # компиляция программы в .exe файл (bu
 ### Table of Contents
 
 -   [stdio](#stdio)
+    -   -   -   -   [Интерфейс ввода/вывода.](#Интерфейс-вводавывода)
     -   [readln](#readln)
+        -   -   -   [Считывает строку, введённую пользователем. Возвращает строку.](#Считывает-строку-введённую-пользователем-Возвращает-строку)
     -   [readlnInt](#readlnint)
+        -   -   -   [Считывает строку, введённую пользователем. Возвращает целое число.](#Считывает-строку-введённую-пользователем-Возвращает-целое-число)
     -   [write](#write)
+        -   -   -   [Вывод строки на экран. Следующий вывод начнётся с текущей строки.](#Вывод-строки-на-экран-Следующий-вывод-начнётся-с-текущей-строки)
     -   [writeln](#writeln)
+        -   -   -   [Вывод строки на экран. Следующий вывод начнётся с новой строки.](#Вывод-строки-на-экран-Следующий-вывод-начнётся-с-новой-строки)
 
 ## stdio
 
-Интерфейс ввода/вывода.
 Input/output interface.
+
+###### _Интерфейс ввода/вывода._
 
 ### readln
 
-Считывает строку, введённую пользователем. Возвращает строку.
-(Reads the line entered by user. Returns a string.)
+Reads the line entered by user. Returns a string.
+
+###### _Считывает строку, введённую пользователем. Возвращает строку._
 
 **Parameters**
 
@@ -51,8 +58,9 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### readlnInt
 
-Считывает строку, введённую пользователем. Возвращает целое число.
-(Reads the line entered by user. Returns a number.)
+Reads the line entered by user. Returns a number.
+
+###### _Считывает строку, введённую пользователем. Возвращает целое число._
 
 **Parameters**
 
@@ -63,8 +71,9 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### write
 
-Вывод строки на экран. Следующий вывод начнётся с текущей строки
-(Print a line on the screen. Next output will start from the current line.)
+Print a line on the screen. Next output will start from the current line.
+
+###### _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
 
 **Parameters**
 
@@ -72,8 +81,9 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### writeln
 
-Вывод строки на экран. Следующий вывод начнётся с новой строки.
-(Print a line on the screen. Next output will start from the new line.)
+Print a line on the screen. Next output will start from the new line.
+
+###### _Вывод строки на экран. Следующий вывод начнётся с новой строки._
 
 **Parameters**
 
