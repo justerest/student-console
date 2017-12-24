@@ -4,15 +4,15 @@ import { createInterface } from 'readline';
 import chalk from 'chalk';
 
 /**
-* Input/output interface.
-* ###### *Интерфейс ввода/вывода.*
+* Input/output interface.  
+* _Интерфейс ввода/вывода._
 * @name stdio
 */
 export default {
 
   /**
-  * Reads the line entered by user. Returns a string.
-  * ###### *Считывает строку, введённую пользователем. Возвращает строку.*
+  * Reads the line entered by user. Returns a string.  
+  * _Считывает строку, введённую пользователем. Возвращает строку._
   * @async
   * @param {string} message
   * @param {string} [defaultValue] значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
@@ -23,8 +23,8 @@ export default {
   },
 
   /**
-  * Reads the line entered by user. Returns a number.
-  * ###### *Считывает строку, введённую пользователем. Возвращает целое число.*
+  * Reads the line entered by user. Returns a number.  
+  * _Считывает строку, введённую пользователем. Возвращает целое число._
   * @async
   * @param {string} message
   * @param {number} [defaultValue] значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
@@ -41,8 +41,8 @@ export default {
   },
 
   /**
-  * Print a line on the screen. Next output will start from the current line.
-  * ###### *Вывод строки на экран. Следующий вывод начнётся с текущей строки.*
+  * Print a line on the screen. Next output will start from the current line.  
+  * _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
   * @param {string | number} message
   */
   write(message: string | number) {
@@ -55,8 +55,8 @@ export default {
   },
 
   /**
-  * Print a line on the screen. Next output will start from the new line.
-  * ###### *Вывод строки на экран. Следующий вывод начнётся с новой строки.*
+  * Print a line on the screen. Next output will start from the new line.  
+  * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
   * @param {string | number} message
   */
   writeln(message: string | number) {
