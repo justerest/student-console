@@ -6,7 +6,7 @@ import chalk from 'chalk';
 /**
 * Input/output interface.
 *
-* _Интерфейс ввода/вывода._
+* ~~Интерфейс ввода/вывода.~~
 * @name stdio
 */
 export default {
@@ -14,7 +14,7 @@ export default {
   /**
   * Reads the line entered by user. Returns a string.
   *
-  * _Считывает строку, введённую пользователем. Возвращает строку._
+  * ~~Считывает строку, введённую пользователем. Возвращает строку.~~
   * @async
   * @param {string} message
   * @param {string} [defaultValue] значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
@@ -27,7 +27,7 @@ export default {
   /**
   * Reads the line entered by user. Returns a number.
   *
-  * _Считывает строку, введённую пользователем. Возвращает целое число._
+  * ~~Считывает строку, введённую пользователем. Возвращает целое число.~~
   * @async
   * @param {string} message
   * @param {number} [defaultValue] значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
@@ -46,7 +46,7 @@ export default {
   /**
   * Print a line on the screen. Next output will start from the current line.
   *
-  * _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
+  * ~~Вывод строки на экран. Следующий вывод начнётся с текущей строки.~~
   * @param {string | number} message
   */
   write(message: string | number) {
@@ -61,7 +61,7 @@ export default {
   /**
   * Print a line on the screen. Next output will start from the new line.
   *
-  * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
+  * ~~Вывод строки на экран. Следующий вывод начнётся с новой строки.~~
   * @param {string | number} message
   */
   writeln(message: string | number) {
