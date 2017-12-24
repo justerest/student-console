@@ -31,13 +31,15 @@ export default {
   * @async
   * @param {string} message
   * @param {number} [defaultValue] the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
+  * @throws will throw an error and exit if can't convert the line into number
+  * ~~вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~
   * @return {Promise<number>}
   */
   async readlnInt(message: string, defaultValue?: number) {
     const line = await this._readln(message, defaultValue);
     const result = parseInt(line, 10);
     if (isNaN(result)) {
-      console.error(chalk.red('\nНеправильный формат данных\n'));
+      console.error(chalk.red('\nНеверный формат данных\n'));
       process.exit();
     }
     return result;

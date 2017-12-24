@@ -63,6 +63,10 @@ Reads the line entered by user. Returns a number.
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
 
+
+-   Throws **any** will throw an error and exit if can't convert the line into number
+    ~~вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~
+
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)>** 
 
 ### write

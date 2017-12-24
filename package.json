@@ -1,8 +1,8 @@
 {
   "name": "student-console",
-  "version": "0.5.9",
+  "version": "0.5.10",
   "description": "template for js console program",
-  "main": "main.js",
+  "main": "index.ts",
   "directories": {
     "lib": "lib",
     "src": "src"
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@types/node": "^8.5.2",
     "documentation": "^5.3.5",
+    "pkg": "^4.3.0-beta.5",
     "typescript": "^2.6.2"
   }
 }
