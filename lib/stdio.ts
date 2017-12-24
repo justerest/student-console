@@ -17,7 +17,7 @@ export default {
   * ~~Считывает строку, введённую пользователем. Возвращает строку.~~
   * @async
   * @param {string} message
-  * @param {string} [defaultValue] the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
+  * @param {string} [defaultValue] _The value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~_
   * @return {Promise<string>}
   */
   readln(message: string, defaultValue?: string) {
@@ -30,9 +30,9 @@ export default {
   * ~~Считывает строку, введённую пользователем. Возвращает целое число.~~
   * @async
   * @param {string} message
-  * @param {number} [defaultValue] the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
-  * @throws will throw an error and exit if can't convert the line into number
-  * ~~вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~
+  * @param {number} [defaultValue] _The value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~_
+  * @throws _Will throw an error and exit if can't convert the line into number.
+  * ~~Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~_
   * @return {Promise<number>}
   */
   async readlnInt(message: string, defaultValue?: number) {

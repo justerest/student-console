@@ -48,7 +48,7 @@ Reads the line entered by user. Returns a string.
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
+-   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** _The value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~_
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** 
 
@@ -61,11 +61,11 @@ Reads the line entered by user. Returns a number.
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
+-   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** _The value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~_
 
 
--   Throws **any** will throw an error and exit if can't convert the line into number
-    ~~вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~
+-   Throws **any** _Will throw an error and exit if can't convert the line into number.
+    ~~Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~_
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)>** 
 
