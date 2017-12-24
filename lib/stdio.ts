@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { createInterface } from 'readline';
 
 import chalk from 'chalk';
@@ -7,6 +6,7 @@ import chalk from 'chalk';
 * Input/output interface.
 *
 * _~~Интерфейс ввода/вывода.~~_
+*
 * @name stdio
 */
 export default {
@@ -15,9 +15,12 @@ export default {
   * Reads the line entered by user. Returns a string.
   *
   * _~~Считывает строку, введённую пользователем. Возвращает строку.~~_
+  *
+  * @func stdio.readln
   * @async
-  * @param {string} message
-  * @param {string} [defaultValue] _The value to be assigned in dev mode. ~~Значение, которое будет присваиваться в dev-режиме~~_
+  * @param  {string}  message
+  * @param  {string}  [defaultValue]  _The value to be assigned in dev mode.
+  *                                   ~~Значение, которое будет присваиваться в dev-режиме~~_
   * @return {Promise<string>}
   */
   readln(message: string, defaultValue?: string) {
@@ -28,11 +31,14 @@ export default {
   * Reads the line entered by user. Returns a number.
   *
   * ~~Считывает строку, введённую пользователем. Возвращает целое число.~~
+  *
+  * @func stdio.readlnInt
   * @async
-  * @param {string} message
-  * @param {number} [defaultValue] _The value to be assigned in dev mode. ~~Значение, которое будет присваиваться в dev-режиме~~_
+  * @param  {string}  message
+  * @param  {number}  [defaultValue]  _The value to be assigned in dev mode.
+  *                                   ~~Значение, которое будет присваиваться в dev-режиме~~_
   * @throws _Will throw an error and exit if can't convert the line into number.
-  * ~~Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~_
+  *         ~~Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~_
   * @return {Promise<number>}
   */
   async readlnInt(message: string, defaultValue?: number) {
@@ -49,6 +55,8 @@ export default {
   * Print a line on the screen. Next output will start from the current line.
   *
   * _~~Вывод строки на экран. Следующий вывод начнётся с текущей строки.~~_
+  *
+  * @func stdio.write
   * @param {string | number} message
   */
   write(message: string | number) {
@@ -64,6 +72,8 @@ export default {
   * Print a line on the screen. Next output will start from the new line.
   *
   * _~~Вывод строки на экран. Следующий вывод начнётся с новой строки.~~_
+  *
+  * @func stdio.writeln
   * @param {string | number} message
   */
   writeln(message: string | number) {

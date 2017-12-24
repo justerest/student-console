@@ -28,10 +28,10 @@ npm run build     # build program into .exe ~~компиляция програ�
 ### Table of Contents
 
 -   [stdio](#stdio)
-    -   [readln](#readln)
-    -   [readlnInt](#readlnint)
-    -   [write](#write)
-    -   [writeln](#writeln)
+-   [stdio.readln](#stdioreadln)
+-   [stdio.readlnInt](#stdioreadlnint)
+-   [stdio.write](#stdiowrite)
+-   [stdio.writeln](#stdiowriteln)
 
 ## stdio
 
@@ -39,7 +39,7 @@ Input/output interface.
 
 _~~Интерфейс ввода/вывода.~~_
 
-### readln
+## stdio.readln
 
 Reads the line entered by user. Returns a string.
 
@@ -48,11 +48,12 @@ _~~Считывает строку, введённую пользователе�
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** _The value to be assigned in dev mode. ~~Значение, которое будет присваиваться в dev-режиме~~_
+-   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** _The value to be assigned in dev mode.
+                                      ~~Значение, которое будет присваиваться в dev-режиме~~_
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** 
 
-### readlnInt
+## stdio.readlnInt
 
 Reads the line entered by user. Returns a number.
 
@@ -61,15 +62,16 @@ Reads the line entered by user. Returns a number.
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** _The value to be assigned in dev mode. ~~Значение, которое будет присваиваться в dev-режиме~~_
+-   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** _The value to be assigned in dev mode.
+                                      ~~Значение, которое будет присваиваться в dev-режиме~~_
 
 
 -   Throws **any** _Will throw an error and exit if can't convert the line into number.
-    ~~Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~_
+            ~~Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число~~_
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)>** 
 
-### write
+## stdio.write
 
 Print a line on the screen. Next output will start from the current line.
 
@@ -79,7 +81,7 @@ _~~Вывод строки на экран. Следующий вывод нач
 
 -   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
 
-### writeln
+## stdio.writeln
 
 Print a line on the screen. Next output will start from the new line.
 
