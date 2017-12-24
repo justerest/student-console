@@ -4,16 +4,19 @@ import { createInterface } from 'readline';
 import chalk from 'chalk';
 
 /**
-* Интерфейс ввода/вывода
+* Интерфейс ввода/вывода.
+* Input/output interface.
 * @name stdio
 */
 export default {
 
   /**
   * Считывает строку, введённую пользователем. Возвращает строку.
+  * Reads the line entered by user. Returns a string.
+  * @async
   * @param {string} message
-  * @param {string} [defaultValue] значение, которое будет присваиваться в dev-режиме
-  * @return {string}
+  * @param {string} [defaultValue] значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
+  * @return {Promise<string>}
   */
   readln(message: string, defaultValue?: string) {
     return this._readln(message, defaultValue);
@@ -21,9 +24,11 @@ export default {
 
   /**
   * Считывает строку, введённую пользователем. Возвращает целое число.
+  * Reads the line entered by user. Returns a number.
+  * @async
   * @param {string} message
-  * @param {number} [defaultValue] значение, которое будет присваиваться в dev-режиме
-  * @return {number}
+  * @param {number} [defaultValue] значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
+  * @return {Promise<number>}
   */
   async readlnInt(message: string, defaultValue?: number) {
     const line = await this._readln(message, defaultValue);
@@ -36,7 +41,8 @@ export default {
   },
 
   /**
-  * Вывод строки на экран, следующий вывод начнётся с текущей строки
+  * Вывод строки на экран. Следующий вывод начнётся с текущей строки
+  * Print a line on the screen. Next output will start from the current line.
   * @param {string | number} message
   */
   write(message: string | number) {
@@ -49,7 +55,8 @@ export default {
   },
 
   /**
-  * Вывод строки на экран, следующий вывод начнётся с новой строки
+  * Вывод строки на экран. Следующий вывод начнётся с новой строки.
+  * Print a line on the screen. Next output will start from the new line.
   * @param {string | number} message
   */
   writeln(message: string | number) {

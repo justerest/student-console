@@ -1,6 +1,7 @@
 # student-console
 
 Шаблон для создания консольных программ
+Template for create console programs
 
 # Install
 
@@ -14,9 +15,9 @@ npm run dev
 # Usage
 
 ```bash
-npm run dev       # запуск программы в режиме разработки
-npm run test      # запуск программы в режиме реального пользования
-npm run build     # компиляция программы в .exe файл
+npm run dev       # запуск программы в режиме разработки (run program in dev mode)
+npm run test      # запуск программы в режиме реального пользования (run program in prod mode)
+npm run build     # компиляция программы в .exe файл (build program into .exe)
 ```
 
 # lib
@@ -33,33 +34,37 @@ npm run build     # компиляция программы в .exe файл
 
 ## stdio
 
-Интерфейс ввода/вывода
+Интерфейс ввода/вывода.
+Input/output interface.
 
 ### readln
 
 Считывает строку, введённую пользователем. Возвращает строку.
+Reads the line entered by user. Returns a string.
 
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** значение, которое будет присваиваться в dev-режиме
+-   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
 
-Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** 
 
 ### readlnInt
 
 Считывает строку, введённую пользователем. Возвращает целое число.
+Reads the line entered by user. Returns a number.
 
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** значение, которое будет присваиваться в dev-режиме
+-   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
 
-Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)>** 
 
 ### write
 
-Вывод строки на экран, следующий вывод начнётся с текущей строки
+Вывод строки на экран. Следующий вывод начнётся с текущей строки
+Print a line on the screen. Next output will start from the current line.
 
 **Parameters**
 
@@ -67,7 +72,8 @@ Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 ### writeln
 
-Вывод строки на экран, следующий вывод начнётся с новой строки
+Вывод строки на экран. Следующий вывод начнётся с новой строки.
+Print a line on the screen. Next output will start from the new line.
 
 **Parameters**
 
