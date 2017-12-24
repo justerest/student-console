@@ -16,9 +16,9 @@ npm run dev
 # Usage
 
 ```bash
-npm run dev       # запуск программы в режиме разработки (run program in dev mode)
-npm run test      # запуск программы в режиме реального пользования (run program in prod mode)
-npm run build     # компиляция программы в .exe файл (build program into .exe)
+npm run dev       # run program in dev mode ~~запуск программы в режиме разработки~~
+npm run test      # run program in prod mode ~~запуск программы в режиме реального пользования~~
+npm run build     # build program into .exe ~~компиляция программы в .exe файл~~
 ```
 
 # lib
@@ -48,7 +48,7 @@ Reads the line entered by user. Returns a string.
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
+-   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** 
 
@@ -61,7 +61,7 @@ Reads the line entered by user. Returns a number.
 **Parameters**
 
 -   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** значение, которое будет присваиваться в dev-режиме (the value to be assigned in dev mode)
+-   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** the value to be assigned in dev mode ~~значение, которое будет присваиваться в dev-режиме~~
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)>** 
 
