@@ -35,11 +35,13 @@ npm run build     # компиляция программы в .exe файл (bu
 ## stdio
 
 Input/output interface.
+
 _Интерфейс ввода/вывода._
 
 ### readln
 
 Reads the line entered by user. Returns a string.
+
 _Считывает строку, введённую пользователем. Возвращает строку._
 
 **Parameters**
@@ -52,6 +54,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 ### readlnInt
 
 Reads the line entered by user. Returns a number.
+
 _Считывает строку, введённую пользователем. Возвращает целое число._
 
 **Parameters**
@@ -64,6 +67,7 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 ### write
 
 Print a line on the screen. Next output will start from the current line.
+
 _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
 
 **Parameters**
@@ -73,6 +77,7 @@ _Вывод строки на экран. Следующий вывод начн
 ### writeln
 
 Print a line on the screen. Next output will start from the new line.
+
 _Вывод строки на экран. Следующий вывод начнётся с новой строки._
 
 **Parameters**

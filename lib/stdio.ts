@@ -4,14 +4,16 @@ import { createInterface } from 'readline';
 import chalk from 'chalk';
 
 /**
-* Input/output interface.  
+* Input/output interface.
+*
 * _Интерфейс ввода/вывода._
 * @name stdio
 */
 export default {
 
   /**
-  * Reads the line entered by user. Returns a string.  
+  * Reads the line entered by user. Returns a string.
+  *
   * _Считывает строку, введённую пользователем. Возвращает строку._
   * @async
   * @param {string} message
@@ -23,7 +25,8 @@ export default {
   },
 
   /**
-  * Reads the line entered by user. Returns a number.  
+  * Reads the line entered by user. Returns a number.
+  *
   * _Считывает строку, введённую пользователем. Возвращает целое число._
   * @async
   * @param {string} message
@@ -41,7 +44,8 @@ export default {
   },
 
   /**
-  * Print a line on the screen. Next output will start from the current line.  
+  * Print a line on the screen. Next output will start from the current line.
+  *
   * _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
   * @param {string | number} message
   */
@@ -55,7 +59,8 @@ export default {
   },
 
   /**
-  * Print a line on the screen. Next output will start from the new line.  
+  * Print a line on the screen. Next output will start from the new line.
+  *
   * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
   * @param {string | number} message
   */
