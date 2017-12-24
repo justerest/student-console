@@ -28,10 +28,10 @@ npm run build     # build program into .exe ~~компиляция програ�
 ### Table of Contents
 
 -   [stdio](#stdio)
--   [stdio.readln](#stdioreadln)
--   [stdio.readlnInt](#stdioreadlnint)
--   [stdio.write](#stdiowrite)
--   [stdio.writeln](#stdiowriteln)
+    -   [readln](#readln)
+    -   [readlnInt](#readlnint)
+    -   [write](#write)
+    -   [writeln](#writeln)
 
 ## stdio
 
@@ -39,7 +39,7 @@ Input/output interface.
 
 _~~Интерфейс ввода/вывода.~~_
 
-## stdio.readln
+### readln
 
 Reads the line entered by user. Returns a string.
 
@@ -53,7 +53,7 @@ _~~Считывает строку, введённую пользователе�
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** 
 
-## stdio.readlnInt
+### readlnInt
 
 Reads the line entered by user. Returns a number.
 
@@ -71,7 +71,7 @@ Reads the line entered by user. Returns a number.
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)>** 
 
-## stdio.write
+### write
 
 Print a line on the screen. Next output will start from the current line.
 
@@ -81,7 +81,7 @@ _~~Вывод строки на экран. Следующий вывод нач
 
 -   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
 
-## stdio.writeln
+### writeln
 
 Print a line on the screen. Next output will start from the new line.
 
