@@ -1,6 +1,6 @@
 {
   "name": "student-console",
-  "version": "0.5.16",
+  "version": "0.5.17",
   "description": "template for js console program",
   "main": "index.ts",
   "directories": {
@@ -13,7 +13,7 @@
     "test": "npm run ts && node index.js",
     "build": "npm run ts && pkg index.js -t win -o ./dist/program",
     "build-linux": "npm run ts && pkg index.js -o ./dist/program",
-    "doc": "npm run ts && documentation readme -s lib index.js"
+    "docs": "npm run ts && documentation readme lib/**.js -s lib"
   },
   "keywords": [
     "console",
