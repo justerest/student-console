@@ -41,10 +41,10 @@ npm run build     # компиляция программы в .exe файл
 
 **Parameters**
 
--   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**
+-   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** значение, которое будет присваиваться в dev-режиме
 
-Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 ### readlnInt
 
@@ -52,10 +52,10 @@ Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 **Parameters**
 
--   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**
+-   `message` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `defaultValue` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)?** значение, которое будет присваиваться в dev-режиме
 
-Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)**
+Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
 
 ### write
 
@@ -63,7 +63,7 @@ Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 **Parameters**
 
--   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))**
+-   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 
 
 ### writeln
 
@@ -71,4 +71,4 @@ Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 **Parameters**
 
--   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))**
+-   `message` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** 

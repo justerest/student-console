@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { main } from './main.js';
+import { main } from './src/main';
 
 console.clear();
 process.env.NODE_ENV = process.argv.includes('-dev')

@@ -1,4 +1,4 @@
-import stdio from './lib/stdio';
+import stdio from '../lib/stdio';
 
 export async function main() {
   stdio.writeln('ax^2 + bx + c = 0');
