@@ -1,10 +1,11 @@
 {
   "name": "student-console",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "template for js console program",
-  "main": "main.js",
+  "main": "index.ts",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "src": "src"
   },
   "scripts": {
     "ts": "tsc -p ./",
@@ -12,7 +13,7 @@
     "test": "npm run ts && node index.js",
     "build": "npm run ts && pkg index.js -t win -o ./dist/program",
     "build-linux": "npm run ts && pkg index.js -o ./dist/program",
-    "doc": "npm run ts && documentation readme -s lib index.js"
+    "docs": "npm run ts && documentation build lib/**.js -f html -o docs"
   },
   "keywords": [
     "console",
@@ -26,7 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^8.5.2",
-    "documentation": "^5.3.5",
+    "pkg": "^4.3.0-beta.5",
     "typescript": "^2.6.2"
   }
 }

@@ -1,12 +1,10 @@
-import stdio from './lib/stdio';
+import stdio from '../lib/stdio';
 
 export async function main() {
   stdio.writeln('ax^2 + bx + c = 0');
 
   const a = await stdio.readlnInt('a = ', 1);
-
   const b = await stdio.readlnInt('b = ', -4);
-
   const c = await stdio.readlnInt('c = ', 4);
 
   writeMember(a, true);
@@ -24,20 +22,24 @@ export async function main() {
     return;
   }
 
-  stdio.writeln('x1 = ' + (-b + D) / (2 * a));
+  const x1 = (-b + Math.sqrt(D)) / (2 * a);
+  stdio.write('x1 = ');
+  stdio.writeln(x1);
 
   if (D > 0) {
-    stdio.writeln('x2 = ' + (-b - D) / (2 * a));
+    const x2 = (-b - Math.sqrt(D)) / (2 * a);
+    stdio.write('x2 = ');
+    stdio.writeln(x2);
   }
 }
 
-function writeMember(number: number, isWithoutPlus = false) {
-  const mod = Math.abs(number);
+function writeMember(member: number, isWithoutPlus = false) {
+  const mod = Math.abs(member);
 
-  if (number >= 0 && !isWithoutPlus) {
+  if (member >= 0 && !isWithoutPlus) {
     stdio.write('+ ');
   }
-  if (number < 0) {
+  if (member < 0) {
     stdio.write('- ');
   }
   if (mod !== 1) {

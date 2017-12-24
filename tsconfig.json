@@ -5,9 +5,13 @@
     "lib": ["es6", "dom", "es2016.array.include", "es2017.object"],
     "allowJs": true,
     "baseUrl": ".",
+    "paths": {
+      "*": ["*"]
+    },
     "experimentalDecorators": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "locale": "ru"
-  }
+  },
+  "exclude": ["docs"]
 }
