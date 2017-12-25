@@ -1,11 +1,14 @@
 import stdio from '../lib/stdio';
 
+const ANY_ROOTS = 'x - любое число';
+const NO_ROOTS = 'Корней нет';
+
 export async function main() {
   stdio.writeln('Программа Для Решения Онлайн Уравнений');
   stdio.writeln('ax^2 + bx + c = 0');
 
-  const a = await stdio.readlnInt('a = ', 1);
-  const b = await stdio.readlnInt('b = ', -8);
+  const a = await stdio.readlnInt('a = ', 3);
+  const b = await stdio.readlnInt('b = ', 15);
   const c = await stdio.readlnInt('c = ', 0);
 
   writeMember(a, true);
@@ -13,12 +16,39 @@ export async function main() {
   writeMember(b);
   stdio.write('x ');
   writeMember(c);
+  if (Math.abs(c) === 1) {
+    stdio.write(1);
+  }
   stdio.writeln(' = 0');
 
-  if (a === 0 || b === 0 || c === 0) {
-    stdio.writeln('Это не нормально,чувак!!!');
-    stdio.writeln('Тут НОЛЬ (0) Присутствует!!!');
-    stdio.writeln('Исправляйся Давай!!!');
+  if (a === 0 && b === 0) {
+    if (c === 0) {
+      stdio.writeln(ANY_ROOTS);
+    }
+    else {
+      stdio.writeln(NO_ROOTS);
+    }
+    return;
+  }
+  if (a === 0) {
+    stdio.write('x1 = ');
+    stdio.writeln(- c / b);
+    return;
+  }
+  if (b === 0) {
+    const x = -c / a;
+    if (x >= 0) {
+      stdio.writeln('x1 = ' + (Math.sqrt(x)));
+      stdio.writeln('x2 = ' + (-Math.sqrt(x)));
+    }
+    else {
+      stdio.writeln(NO_ROOTS);
+    }
+    return;
+  }
+  if (c === 0) {
+    stdio.writeln('x1 = 0');
+    stdio.writeln('x2 = ' + (-b / a));
     return;
   }
 
@@ -26,14 +56,14 @@ export async function main() {
   stdio.writeln('D = ' + D);
 
   if (D < 0) {
-    stdio.writeln('Решений нет');
+    stdio.writeln(NO_ROOTS);
     return;
   }
 
-  stdio.writeln('x1 = ' + (-b + D) / (2 * a));
+  stdio.writeln('x1 = ' + (-b + Math.sqrt(D)) / (2 * a));
 
   if (D > 0) {
-    stdio.writeln('x2 = ' + (-b - D) / (2 * a));
+    stdio.writeln('x2 = ' + (-b - Math.sqrt(D)) / (2 * a));
   }
 }
 
