@@ -1,11 +1,12 @@
 import stdio from '../lib/stdio';
 
 export async function main() {
+  stdio.writeln('Программа Для Решения Онлайн Уравнений');
   stdio.writeln('ax^2 + bx + c = 0');
 
   const a = await stdio.readlnInt('a = ', 1);
-  const b = await stdio.readlnInt('b = ', -4);
-  const c = await stdio.readlnInt('c = ', 4);
+  const b = await stdio.readlnInt('b = ', -8);
+  const c = await stdio.readlnInt('c = ', 0);
 
   writeMember(a, true);
   stdio.write('x^2 ');
@@ -13,6 +14,13 @@ export async function main() {
   stdio.write('x ');
   writeMember(c);
   stdio.writeln(' = 0');
+
+  if (a === 0 || b === 0 || c === 0) {
+    stdio.writeln('Это не нормально,чувак!!!');
+    stdio.writeln('Тут НОЛЬ (0) Присутствует!!!');
+    stdio.writeln('Исправляйся Давай!!!');
+    return;
+  }
 
   const D = Math.pow(b, 2) - 4 * a * c;
   stdio.writeln('D = ' + D);
