@@ -4,7 +4,7 @@ const ANY_ROOTS = 'x - любое число';
 const NO_ROOTS = 'Корней нет';
 
 export async function main() {
-  stdio.writeln('Программа Для Решения Онлайн Уравнений');
+  stdio.writeln('Программа для решения уравнений онлайн');
   stdio.writeln('ax^2 + bx + c = 0');
 
   const a = await stdio.readlnInt('a = ', 3);
@@ -21,34 +21,19 @@ export async function main() {
   }
   stdio.writeln(' = 0');
 
-  if (a === 0 && b === 0) {
-    if (c === 0) {
-      stdio.writeln(ANY_ROOTS);
-    }
-    else {
-      stdio.writeln(NO_ROOTS);
-    }
-    return;
-  }
   if (a === 0) {
-    stdio.write('x1 = ');
-    stdio.writeln(- c / b);
-    return;
-  }
-  if (b === 0) {
-    const x = -c / a;
-    if (x >= 0) {
-      stdio.writeln('x1 = ' + (Math.sqrt(x)));
-      stdio.writeln('x2 = ' + (-Math.sqrt(x)));
+    if (b === 0) {
+      if (c === 0) {
+        stdio.writeln(ANY_ROOTS);
+      }
+      else {
+        stdio.writeln(NO_ROOTS);
+      }
     }
     else {
-      stdio.writeln(NO_ROOTS);
+      stdio.write('x1 = ');
+      stdio.writeln(- c / b);
     }
-    return;
-  }
-  if (c === 0) {
-    stdio.writeln('x1 = 0');
-    stdio.writeln('x2 = ' + (-b / a));
     return;
   }
 
