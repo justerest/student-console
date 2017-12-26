@@ -63,8 +63,8 @@ async function readlnInt(message: string, defaultValue?: number) {
 * @param {string | number} message
 * @example
 * const result = 15;
-* write('Ответ: ');
-* writeln(result);
+* stdio.write('Ответ: ');   // Ответ: 15
+* stdio.writeln(result);
 */
 function write(message: string | number) {
   const rl = createInterface({
@@ -83,9 +83,8 @@ function write(message: string | number) {
 * @memberof stdio
 * @param {string | number} message
 * @example
-* const result = 15;
-* write('Ответ: ');
-* writeln(result);
+* stdio.writeln('Вася');  // Вася
+* stdio.writeln(2001);    // 2001
 */
 function writeln(message: string | number) {
   write(message + '\n');

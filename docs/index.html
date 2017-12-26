@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>student-console 0.5.22 | Documentation</title>
+  <title>student-console 0.5.1 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -14,7 +14,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>student-console</h3>
-          <div class='mb1'><code>0.5.22</code></div>
+          <div class='mb1'><code>0.5.1</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -351,8 +351,8 @@
     
       
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> result = <span class="hljs-number">15</span>;
-write(<span class="hljs-string">'Ответ: '</span>);
-writeln(result);</pre>
+stdio.write(<span class="hljs-string">'Ответ: '</span>);   <span class="hljs-comment">// Ответ: 15</span>
+stdio.writeln(result);</pre>
     
   
 
@@ -418,9 +418,8 @@ writeln(result);</pre>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> result = <span class="hljs-number">15</span>;
-write(<span class="hljs-string">'Ответ: '</span>);
-writeln(result);</pre>
+      <pre class='p1 overflow-auto round fill-light'>stdio.writeln(<span class="hljs-string">'Вася'</span>);  <span class="hljs-comment">// Вася</span>
+stdio.writeln(<span class="hljs-number">2001</span>);    <span class="hljs-comment">// 2001</span></pre>
     
   
 
