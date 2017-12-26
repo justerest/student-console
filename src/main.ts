@@ -33,7 +33,7 @@ export async function main() {
   }
 }
 
-function writeMember(member: number, isWithoutPlus = false) {
+function writeMember(member: number, isWithoutPlus?: true) {
   const mod = Math.abs(member);
 
   if (member >= 0 && !isWithoutPlus) {

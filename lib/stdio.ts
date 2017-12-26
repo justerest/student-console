@@ -8,7 +8,12 @@ import chalk from 'chalk';
 *
 * @module stdio
 */
-export default { readln, readlnInt, write, writeln };
+export default {
+  readln,
+  readlnInt,
+  write,
+  writeln,
+};
 
 /**
 * Reads the line entered by user. Returns a string.
@@ -31,7 +36,7 @@ function readln(message: string, defaultValue?: string) {
 /**
 * Reads the line entered by user. Returns a number.
 *
-* Считывает строку, введённую пользователем. Возвращает целое число.
+* _Считывает строку, введённую пользователем. Возвращает целое число._
 *
 * @memberof stdio
 * @async
@@ -60,7 +65,7 @@ async function readlnInt(message: string, defaultValue?: number) {
 * _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
 *
 * @memberof stdio
-* @param {string | number} message
+* @param  {string | number} message
 * @example
 * const result = 15;
 * stdio.write('Ответ: ');   // Ответ: 15
@@ -81,7 +86,7 @@ function write(message: string | number) {
 * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
 *
 * @memberof stdio
-* @param {string | number} message
+* @param  {string | number} message
 * @example
 * stdio.writeln('Вася');  // Вася
 * stdio.writeln(2001);    // 2001
@@ -91,8 +96,8 @@ function writeln(message: string | number) {
 }
 
 /**
- * @private
- */
+* @private
+*/
 async function _readln(message: string, defaultValue?: string | number) {
   const rl = createInterface({
     input: process.stdin,

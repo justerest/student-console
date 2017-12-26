@@ -21,6 +21,6 @@ npm run test      # run program in prod mode ~~запуск программы �
 npm run build     # build program into .exe ~~компиляция программы в .exe файл~~
 ```
 
-## [lib](https://justerest.github.io/student-console/)
+# [lib](https://justerest.github.io/student-console/)
 
 [https://justerest.github.io/student-console/](https://justerest.github.io/student-console/)
