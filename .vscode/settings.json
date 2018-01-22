@@ -1,0 +1,22 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "tslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+    "git.autofetch": true,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "window.zoomLevel": 0,
+}

@@ -14,7 +14,7 @@ export default {
 };
 
 /**
-  * Reads the line entered by user. Returns a string.
+  * Reads the line entered by user. Returns a string.  
   * _Считывает строку, введённую пользователем. Возвращает строку._
   * @memberof stdio
   * @async
@@ -30,7 +30,7 @@ function readln(message: string, defaultValue?: string) {
 }
 
 /**
-  * Reads the line entered by user. Returns a number.
+  * Reads the line entered by user. Returns a number.  
   * _Считывает строку, введённую пользователем. Возвращает целое число._
   *
   * @memberof stdio
