@@ -52,18 +52,18 @@ export default new class Stdio {
     * Print a line on the screen. Next output will start from the current line.  
     * _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
     * @memberof stdio
-    * @param  {string | number} message
+    * @param  {string | number} messages
     * @example
     * const result = 15;
     * stdio.write('Ответ: ');   // Ответ: 15
     * stdio.writeln(result);
     */
-  write(message: string | number) {
+  write(...messages: (string | number)[]) {
     const rl = createInterface({
       input: process.stdin,
       output: process.stdout,
     });
-    rl.write(chalk.green('' + message));
+    rl.write(chalk.green('' + messages.join(' ')));
     rl.close();
   }
 
@@ -71,13 +71,13 @@ export default new class Stdio {
     * Print a line on the screen. Next output will start from the new line.  
     * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
     * @memberof stdio
-    * @param  {string | number} message
+    * @param  {string | number} messages
     * @example
     * stdio.writeln('Вася');  // Вася
     * stdio.writeln(2001);    // 2001
     */
-  writeln(message: string | number) {
-    this.write(message + '\n');
+  writeln(...messages: (string | number)[]) {
+    this.write(messages + '\n');
   }
 
   private async _readln(message: string, defaultValue?: string | number) {
