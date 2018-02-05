@@ -10,35 +10,26 @@ export default new class Stdio {
   /**
     * Reads the line entered by user. Returns a string.  
     * _Считывает строку, введённую пользователем. Возвращает строку._
-    * @memberof stdio
-    * @async
-    * @param  {string}  message
     * @param  {string}  [defaultValue]  _The value to be assigned in dev mode.  
     *                                   Значение, которое будет присваиваться в dev-режиме._
-    * @return {Promise<string>}
     * @example
     * const password = await stdio.readln('Введите пароль: ', 'asdasd');
     */
-  readln(message: string, defaultValue?: string) {
+  async readln(message: string, defaultValue?: string) {
     return this._readln(message, defaultValue);
   }
 
   /**
     * Reads the line entered by user. Returns a number.  
     * _Считывает строку, введённую пользователем. Возвращает целое число._
-    *
-    * @memberof stdio
-    * @async
-    * @param  {string}  message
     * @param  {number}  [defaultValue]  _The value to be assigned in dev mode.  
     *                                   Значение, которое будет присваиваться в dev-режиме._
     * @throws _Will throw an error and exit if can't convert the line into number.  
     *         Вызовет ошибку и завершит программу, если не удастся конвертировать строку в число._
-    * @return {Promise<number>}
     * @example
     * const yearsOld = await stdio.readlnInt('Сколько Вам лет? ', 15);
     */
-  async  readlnInt(message: string, defaultValue?: number) {
+  async readlnInt(message: string, defaultValue?: number) {
     const line = await this._readln(message, defaultValue);
     const result = parseInt(line, 10);
     if (isNaN(result)) {
@@ -51,8 +42,6 @@ export default new class Stdio {
   /**
     * Print a line on the screen. Next output will start from the current line.  
     * _Вывод строки на экран. Следующий вывод начнётся с текущей строки._
-    * @memberof stdio
-    * @param  {string | number} messages
     * @example
     * const result = 15;
     * stdio.write('Ответ: ');   // Ответ: 15
@@ -70,8 +59,6 @@ export default new class Stdio {
   /**
     * Print a line on the screen. Next output will start from the new line.  
     * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
-    * @memberof stdio
-    * @param  {string | number} messages
     * @example
     * stdio.writeln('Вася');  // Вася
     * stdio.writeln(2001);    // 2001
