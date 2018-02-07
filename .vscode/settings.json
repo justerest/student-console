@@ -20,4 +20,5 @@
     "workbench.colorTheme": "One Dark Pro Vivid",
     "window.zoomLevel": 0,
     "typescript.tsdk": "node_modules/typescript/lib",
+    "sort-imports.on-save": false
 }

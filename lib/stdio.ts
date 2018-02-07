@@ -1,11 +1,11 @@
-import { createInterface } from 'readline';
 import chalk from 'chalk';
+import { createInterface } from 'readline';
 
 /**
   * Input/output interface.  
   * _Интерфейс ввода/вывода._
   */
-export default new class Stdio {
+export const stdio = new class Stdio {
 
   /**
     * Reads the line entered by user. Returns a string.  
@@ -60,8 +60,8 @@ export default new class Stdio {
     * Print a line on the screen. Next output will start from the new line.  
     * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
     * @example
-    * stdio.writeln('Вася');  // Вася
-    * stdio.writeln(2001);    // 2001
+    * stdio.writeln('Вася');        // Вася
+    * stdio.writeln(2001, 2002);    // 2001
     */
   writeln(...messages: (string | number)[]) {
     this.write(messages + '\n');
@@ -90,4 +90,3 @@ export default new class Stdio {
   }
 
 };
-
