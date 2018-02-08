@@ -61,7 +61,7 @@ export const stdio = new class Stdio {
     * _Вывод строки на экран. Следующий вывод начнётся с новой строки._
     * @example
     * stdio.writeln('Вася');        // Вася
-    * stdio.writeln(2001, 2002);    // 2001
+    * stdio.writeln(2001, 2002);    // 2001 2002
     */
   writeln(...messages: (string | number)[]) {
     this.write(messages + '\n');
