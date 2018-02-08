@@ -78,9 +78,9 @@ export const stdio = new class Stdio {
       typeof defaultValue !== 'undefined'
     );
     if (hasDefault) {
-      rl.write(chalk.blue(message) + JSON.stringify(defaultValue) + '\n');
+      rl.write(chalk.blue(message) + defaultValue + '\n');
       rl.close();
-      return JSON.stringify(defaultValue);
+      return defaultValue + '';
     }
 
     return new Promise<string>(resolve => rl.question(chalk.blue(message), line => {
